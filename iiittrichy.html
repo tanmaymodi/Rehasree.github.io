@@ -1,13 +1,274 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>IIITtrichy</title>
-</head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../Documents/My%20Web%20Sites/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>IIIT-Trichy</title>
+    <style type="text/css">
+   #home{
+   float:right;
+   clear:both;
+   border:thick;
+  	}
+  	#homeicon{
+  	height:50px;
+  	width:50px;
+  	}
+  	#infoicon{
+  	height:45px;
+  	width:45px;
+  	padding-top:5px;
+  	padding-right:5px;
+	}
+  	li{
+  	float:right;
+  	display: inline;
+	}
+}
+    </style>
+  </head>
 
-<body>
+<body class="bg-light">
+		<ul>
+  		<li><a href="finalhomepage.html"><img id="homeicon" src="homelogo.png"/></a></li>
+  		<li><a ><img id="infoicon"src="info icon.png"/></a></li>
+		</ul>
+		<div id="canvas1">
+		 <h2><strong><u>Placements stats at IIIT-Tiruchirapalli|2019:</u></strong></h2>
+   		<canvas id="myChart" height="100%" ></canvas>
+		<script src="../../Documents/My%20Web%20Sites/chart.js@2.8.0"></script>
+				<script>
+					let ctxa =document.getElementById('myChart').getContext('2d');
+					var chart = new Chart(ctxa, {
+    				// The type of chart we want to create
+    				type: 'bar',
+    				// The data for our dataset
+    				data: {
+       					 labels: ['CSE', 'ECE', 'OVER-ALL'],
+     				     datasets: [{
+       				     label: 'Total registered students',
+           			     backgroundColor:'green',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [50, 20, 70],
+       				     },{
+       				     label: 'Total jobs offered',
+           			     backgroundColor:'blue',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [6, 6, 12],
+       				     },{
+       				     label: 'Total students Selected',
+           			     backgroundColor:'pink',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [14, 2, 16],
+       				     },{
+       				     label: 'Students going for higher studies',
+           			     backgroundColor:'black',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [5, 2, 7],
+						 },{
+       				     label: 'Students who started their own business',
+           			     backgroundColor:'navy',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [7, 7, 14],
+       				     },{
+       				     label: 'Percentage of students placed',
+           			     backgroundColor:'orange',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [3, 1, 4],
+       				     },{
+       				     label: 'Average salary LPA',
+           			     backgroundColor:'indigo',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [10, 1, 11],
+       				     },{
+       				     label: 'Highest Salary',
+           			     backgroundColor:'brown',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [10, 1, 11],
+       					 }]
+   						 },
+   					 				   // Configuration options go here
+ 				   		options: {
+ 				   		legend:{
+ 				   		position:'right',			   
+ 				   		}
+ 				   	}
+					});
+						</script>
+					 	   <!-- Optional JavaScript -->
+ 						   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 						   <script src="../../Documents/My%20Web%20Sites/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ 						   <script src="../../Documents/My%20Web%20Sites/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  						  <script src="../../Documents/My%20Web%20Sites/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 			 <hr>
+ 			 </div>
+ 					<div id="canvas2">
+ 					 <h2><strong><u>Placements stats at IIIT-Allahabad|2018:</u></strong></h2>
+ 					  <canvas id="Chart2018" height="100%" ></canvas>
+ 					 <script src="../../Documents/My%20Web%20Sites/chart.js@2.8.0"></script>
+ 					 <script>
+					let ctxb =document.getElementById('Chart2018').getContext('2d');
+					var chart2018 = new Chart(ctxb, {
+					// The type of chart we want to create
+    				type: 'bar',
+    				// The data for our dataset
+    				data: {
+       					 labels: ['CSE', 'ECE', 'OVER-ALL'],
+     				     datasets: [{
+       				     label: 'Total registered students',
+           			     backgroundColor:'green',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [50, 20, 70],
+       				     },{
+       				     label: 'Total jobs offered',
+           			     backgroundColor:'blue',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [6, 6, 12],
+       				     },{
+       				     label: 'Total students Selected',
+           			     backgroundColor:'pink',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [14, 2, 16],
+       				     },{
+       				     label: 'Students going for higher studies',
+           			     backgroundColor:'black',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [5, 2, 7],
+						 },{
+       				     label: 'Students who started their own business',
+           			     backgroundColor:'navy',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [7, 7, 14],
+       				     },{
+       				     label: 'Percentage of students placed',
+           			     backgroundColor:'orange',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [3, 1, 4],
+       				     },{
+       				     label: 'Average salary LPA',
+           			     backgroundColor:'indigo',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [10, 1, 11],
+       				     },{
+       				     label: 'Highest Salary',
+           			     backgroundColor:'brown',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [10, 1, 11],
+       					 }]
+   						 },
+   					 				   // Configuration options go here
+ 				   		options: {
+ 				   		legend:{
+ 				   		position:'right',			   
+ 				   		}
+ 				   	}
+					});
+						</script>
+					 	   <!-- Optional JavaScript -->
+ 						   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 						   <script src="../../Documents/My%20Web%20Sites/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ 						   <script src="../../Documents/My%20Web%20Sites/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  						  <script src="../../Documents/My%20Web%20Sites/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 					 <hr>
+ 					 </div>
+ 					 		<div id="canvas3">
+ 					 <h2><strong><u>Placements stats at IIIT-Allahabad|2017:</u></strong></h2>
+ 					 <canvas id="Chart2017" height="100%" ></canvas>
+ 					 <script src="../../Documents/My%20Web%20Sites/chart.js@2.8.0"></script>
+ 					 <script>
+					let ctxc =document.getElementById('Chart2017').getContext('2d');
+					var chart2017 = new Chart(ctxc, {
+					// The type of chart we want to create
+    				type: 'bar',
+    				// The data for our dataset
+    				data: {
+       					 labels: ['CSE', 'ECE', 'OVER-ALL'],
+     				     datasets: [{
+       				     label: 'Total registered students',
+           			     backgroundColor:'green',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [50, 20, 70],
+       				     },{
+       				     label: 'Total jobs offered',
+           			     backgroundColor:'blue',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [6, 6, 12],
+       				     },{
+       				     label: 'Total students Selected',
+           			     backgroundColor:'pink',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [14, 2, 16],
+       				     },{
+       				     label: 'Students going for higher studies',
+           			     backgroundColor:'black',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [5, 2, 7],
+						 },{
+       				     label: 'Students who started their own business',
+           			     backgroundColor:'navy',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [7, 7, 14],
+       				     },{
+       				     label: 'Percentage of students placed',
+           			     backgroundColor:'orange',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [3, 1, 4],
+       				     },{
+       				     label: 'Average salary LPA',
+           			     backgroundColor:'indigo',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [10, 1, 11],
+       				     },{
+       				     label: 'Highest Salary',
+           			     backgroundColor:'brown',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [10, 1, 11],
+       					 }]
+   						 },
+   					 				   // Configuration options go here
+ 				   		options: {
+ 				   		legend:{
+ 				   		position:'right',			   
+ 				   		}
+ 				   	}
+					});
+						</script>
+					 	   <!-- Optional JavaScript -->
+ 						   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 						   <script src="../../Documents/My%20Web%20Sites/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ 						   <script src="../../Documents/My%20Web%20Sites/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  						  <script src="../../Documents/My%20Web%20Sites/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ 					 <hr>
+ 					 </div>
 
-</body>
-
-</html>
+ </body>
+ </html>
+ 					 

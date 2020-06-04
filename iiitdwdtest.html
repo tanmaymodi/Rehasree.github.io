@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="../../Documents/My%20Web%20Sites/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>IIITDWD</title>
     <style type="text/css">
+   h2{
+	color:navy;
+}
    #home{
    float:right;
    clear:both;
@@ -17,20 +20,36 @@
   	#homeicon{
   	height:50px;
   	width:50px;
+  	}
+  	#infoicon{
+  	height:45px;
+  	width:45px;
+  	padding-top:5px;
+  	padding-right:5px;
+	}
+
+  	li{
+  	float:right;
+  	display: inline;
+	}
+
 }
     </style>
   </head>
   	<body class="bg-light">
+  		<ul>
+  		<li><a href="finalhomepage.html"><img id="homeicon" src="homelogo.png"/></a></li>
+  		<li><a ><img id="infoicon"src="info icon.png"/></a></li>
+		</ul>
+
   	
   		<div class="col-md-6 offset-md-3 my-5">
   		<div class="card">
   		<div class="card-body">
-  			<h2><strong><u>Placements stats at IIIT-DWD|2019:<a id="home"href="../../Desktop/placement-graphs/finalhomepage.html">
-			<img id="homeicon"src="../../Documents/My%20Web%20Sites/home.jpg"/></a>
-  			<hr></u></strong></h2>
+  			<h2><strong><u>Placements stats at IIIT-DWD|2019:</u></strong></h2><hr>
   		</div> 
   		<div class="card-body">
-			<canvas id="myChart" height="120%" ></canvas>
+			<canvas id="myChart" height="100%"  ></canvas>
 		</div>
 		</div>
 		</div>
@@ -46,51 +65,47 @@
      				     datasets: [{
        				     label: 'Total registered students',
            			     backgroundColor:'green',
-       				     borderColor: 'black',
-       				     borderWidth:'2px',
-       				     data: [50, 20, 70],
+            		     borderWidth:'2px',
+       				     data: [20, 13, 33],
        				     },{
        				     label: 'Total jobs offered',
            			     backgroundColor:'blue',
        				     borderColor: 'black',
        				     borderWidth:'2px',
-       				     data: [6, 6, 12],
+       				     data: [12, 4, 16],
        				     },{
        				     label: 'Total students Selected',
            			     backgroundColor:'pink',
        				     borderColor: 'black',
        				     borderWidth:'2px',
-       				     data: [14, 2, 16],
+       				     data: [7, 3, 10],
        				     },{
        				     label: 'Students going for higher studies',
-           			     backgroundColor:'black',
-       				     borderColor: 'black',
+           			     backgroundColor:'brown',
        				     borderWidth:'2px',
-       				     data: [5, 2, 7],
+       				     data: [3, 1, 4],
 						 },{
        				     label: 'Students who started their own business',
            			     backgroundColor:'navy',
-       				     borderColor: 'black',
        				     borderWidth:'2px',
-       				     data: [7, 7, 14],
+       				     data: [0, 0, 0],
        				     },{
        				     label: 'Percentage of students placed',
-           			     backgroundColor:'Yellow',
-       				     borderColor: 'black',
+           			     backgroundColor:'red',
        				     borderWidth:'2px',
-       				     data: [3, 1, 4],
+       				     data: [35, 23, 44],
        				     },{
        				     label: 'Average salary LPA',
            			     backgroundColor:'indigo',
        				     borderColor: 'black',
        				     borderWidth:'2px',
-       				     data: [10, 1, 11],
+       				     data: [5, 2, 4 ],
        				     },{
        				     label: 'Highest Salary',
-           			     backgroundColor:'Red',
+           			     backgroundColor:'orange',
        				     borderColor: 'black',
        				     borderWidth:'2px',
-       				     data: [10, 1, 11],
+       				     data: [13, 2, 13],
        					 }]
    						 },
  				   // Configuration options go here
