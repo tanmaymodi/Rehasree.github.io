@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>IIITDWD</title>
+  </head>
+  	<body class="bg-light">
+  	
+  		<div class="col-md-6 offset-md-3 my-5">
+  		<div class="card">
+  		<div class="card-body">
+  			<p>Placements stats at IIIT-DWD:</p>
+  			<hr>
+  		</div> 
+  		<div class="card-body">
+			<canvas id="myChart"></canvas>
+		</div>
+		</div>
+		</div>
+			<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+				<script>
+					var ctx = document.getElementById('myChart').getContext('2d');
+					var chart = new Chart(ctx, {
+    				// The type of chart we want to create
+    				type: 'bar',
+    				// The data for our dataset
+    				data: {
+       					 labels: ['CSE', 'ECE', 'OVER-ALL'],
+     				     datasets: [{
+       				     label: 'Total registered students',
+           			     backgroundColor:'green',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [50, 20, 70],
+       				     },{
+       				     label: 'Total jobs offered',
+           			     backgroundColor:'blue',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [6, 6, 12],
+       				     },{
+       				     label: 'Total students Selected',
+           			     backgroundColor:'pink',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [14, 2, 16],
+       				     },{
+       				     label: 'Students going for higher studies',
+           			     backgroundColor:'black',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [5, 2, 7],
+						 },{
+       				     label: 'Students who started their own business',
+           			     backgroundColor:'navy',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [7, 7, 14],
+       				     },{
+       				     label: 'Percentage of students placed',
+           			     backgroundColor:'Yellow',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [3, 1, 4],
+       				     },{
+       				     label: 'Average salary LPA',
+           			     backgroundColor:'indigo',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [10, 1, 11],
+       				     },{
+       				     label: 'Highest Salary',
+           			     backgroundColor:'Red',
+       				     borderColor: 'black',
+       				     borderWidth:'2px',
+       				     data: [10, 1, 11],
+       					 }]
+   						 },
+ 				   // Configuration options go here
+ 				   options: {}
+					});
+							</script>
+ 						   <!-- Optional JavaScript -->
+ 						   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 						   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ 						   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  						  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
