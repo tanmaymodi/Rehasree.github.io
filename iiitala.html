@@ -69,11 +69,17 @@
             font-family: "Times New Roman", Times, serif;
             color: navy;
         }
+        #info{
+          font-size:20px;
+          font-family: "Times New Roman", Times, serif;
+        }
     </style>
 </head>
 
 <body class="bg-light">
     <div id="canvas1">
+        <p id="info">The Indian Institute of Information Technology Allahabad has given very vast opportunities for the real techies who aimed at becoming one among the finest technologists. With a phenomenal percentage of placed scholars, as expected the outcomes are with a very high package, from the very beginning. 
+The following illustrations would give the gist of their evolution over the last three years :</p>
         <h2><strong><u>Placements stats at IIIT-Allahabad|2019:</u></strong></h2>
         <canvas id="myChart" height="100%"></canvas>
         <script src="chart.js@2.8.0"></script>
@@ -195,8 +201,6 @@
             <script src="popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script src="bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         </div>
-
-        <hr>
     </div>
     <div id="canvas2">
         <h2><strong><u>Placements stats at IIIT-Allahabad|2018:</u></strong></h2>
@@ -320,8 +324,6 @@
             <script src="popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script src="bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         </div>
-
-        <hr>
     </div>
     <div id="canvas3">
         <h2><strong><u>Placements stats at IIIT-Allahabad|2017:</u></strong></h2>
@@ -416,7 +418,6 @@
             <p>ECE</p>
             <script src="chart.js@2.8.0"></script>
             <canvas id="mypieChart6" height="100%"></canvas>
-
             <script>
                 var ctxpc191 = document.getElementById('mypieChart6').getContext('2d');
                 var chartpc2 = new Chart(ctxpc191, {
@@ -445,9 +446,6 @@
             <script src="popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script src="bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         </div>
-
-        <hr>
-
         <script>
             mybutton = document.getElementById("myBtn");
 
@@ -455,7 +453,6 @@
             window.onscroll = function() {
                 scrollFunction()
             };
-
             function scrollFunction() {
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                     mybutton.style.display = "block";
@@ -463,17 +460,13 @@
                     mybutton.style.display = "none";
                 }
             }
-
             // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
                 document.body.scrollTop = 0; // For Safari
                 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
             }
         </script>
-
         <button onclick="topFunction()" id="myBtn" title="Go to top"><img id="arrow" src="toparrow.png"/></button>
     </div>
-
 </body>
-
 </html>
